@@ -8,9 +8,9 @@ import './leaflet/leaflet.css!';
 import './partials/module.css!';
 
 const panelDefaults = {
-  maxDataPoints: 500,
+  maxDataPoints: 1500,
   autoZoom: true,
-  scrollWheelZoom: false,
+  scrollWheelZoom: true,
   lineColor: 'red',
   pointColor: 'royalblue',
 }
@@ -180,6 +180,11 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
         maxZoom: 19
       }).addTo(this.leafMap), // Add default layer to map
       'OpenTopoMap': L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+        maxZoom: 17
+      }),
+      //url:"https://{s}.tiles.ffrgb.net/{z}/{x}/{y}{retina}.png
+      'Freifunk': L.tileLayer('https://{s}.tiles.ffrgb.net/{z}/{x}/{y}{retina}.png', {
         attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
         maxZoom: 17
       }),
