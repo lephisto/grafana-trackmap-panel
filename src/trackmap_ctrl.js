@@ -183,10 +183,15 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
         attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
         maxZoom: 17
       }),
-      //url:"https://{s}.tiles.ffrgb.net/{z}/{x}/{y}{retina}.png
-      'Freifunk': L.tileLayer('https://{s}.tiles.ffrgb.net/{z}/{x}/{y}{retina}.png', {
-        attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
-        maxZoom: 17
+      'Freifunk Night': L.tileLayer('https://{s}.tiles.ffrgb.net/n/{z}/{x}/{y}.png', {
+        attribution: 'Leaflet | &copy; <a href="http://www.openmaptiles.org/">Openmaptiles</a> &copy; <a href="http://www.openstreetmap.org/about">Openstreetmap Contributors</a>)',
+        maxZoom: 19,
+        subdomains: '1234',
+      }),
+      'Freifunk Day': L.tileLayer('https://{s}.tiles.ffrgb.net/{z}/{x}/{y}.png', {
+        attribution: 'Leaflet | &copy; <a href="http://www.openmaptiles.org/">Openmaptiles</a> &copy; <a href="http://www.openstreetmap.org/about">Openstreetmap Contributors</a>)',
+        maxZoom: 19,
+        subdomains: '1234',
       }),
       'Satellite': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Imagery &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
