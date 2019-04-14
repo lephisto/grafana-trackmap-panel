@@ -184,12 +184,12 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
         maxZoom: 17
       }),
       'Freifunk Night': L.tileLayer('https://{s}.tiles.ffrgb.net/n/{z}/{x}/{y}.png', {
-        attribution: 'Leaflet | &copy; <a href="http://www.openmaptiles.org/">Openmaptiles</a> &copy; <a href="http://www.openstreetmap.org/about">Openstreetmap Contributors</a>)',
+        attribution: '<a href="leafletjs.com">Leaflet</a>| &copy; <a href="http://www.openmaptiles.org/">Openmaptiles</a> &copy; <a href="http://www.openstreetmap.org/about">Openstreetmap Contributors</a>)',
         maxZoom: 19,
         subdomains: '1234',
       }),
       'Freifunk Day': L.tileLayer('https://{s}.tiles.ffrgb.net/{z}/{x}/{y}.png', {
-        attribution: 'Leaflet | &copy; <a href="http://www.openmaptiles.org/">Openmaptiles</a> &copy; <a href="http://www.openstreetmap.org/about">Openstreetmap Contributors</a>)',
+        attribution: '<a href="leafletjs.com">Leaflet</a> | &copy; <a href="http://www.openmaptiles.org/">Openmaptiles</a> &copy; <a href="http://www.openstreetmap.org/about">Openstreetmap Contributors</a>)',
         maxZoom: 19,
         subdomains: '1234',
       }),
